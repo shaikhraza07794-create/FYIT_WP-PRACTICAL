@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cat Facts</title>
+        </head>
+        <body>
+            <center>
+            <h1>Welcome</h1>
+            <img src="https://png.pngtree.com/png-clipart/20240312/original/pngtree-cute-kawaii-cat-png-image_14573049.png"/>
+<br/><br/>
+<button id="btn">Show Cat Facts</button>
+<p id="fact_text"></p>
+</center>
+
+<script>
+const mybutton = document.getElementById("btn");
+const catfact =  document.getElementById("fact_text");
+
+mybutton.addEventListener("click", () => {
+    fetch("https://api.gold-api.com/price/XAU")
+
+    .then(function(response) {
+        return response.json();
+    })
+
+    .then(function(data) {
+        catfact.innerHTML = data.currency;
+        //console.lo(data);
+    })
+
+     });
+    
+</script>
+</body>
+    </html>

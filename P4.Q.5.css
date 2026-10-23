@@ -1,0 +1,18 @@
+header{
+    background-color: blue;
+    text-color: white;
+}
+nav{
+    background-color: darkblue;
+    text-align: center;
+}
+body{
+    background-color: lightgray;
+}
+div.form-container{
+    margin-left: 80px;
+}
+footer{
+    background-color: blue;
+    text-color:#fff;
+}
